@@ -21,7 +21,7 @@ News Fetcher uses a number of open source projects to work properly:
 * [Docker](https://www.docker.com/) - is a set of platform as a service (PaaS) products that use OS-level virtualization.
 * [Docker Compose](https://docs.docker.com/compose/) - is a tool for running multi-container applications on Docker.
 
-And of course News Fetcher itself is open source with a [public repository]()
+And of course News Fetcher itself is open source with a [public repository](https://github.com/FadyAlfred/news-fetcher)
  on GitHub.
 
 ### Install and run
