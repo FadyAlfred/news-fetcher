@@ -2,3 +2,4 @@ pydantic
 requests
 celery[redis]
 flower
+beautifulsoup4

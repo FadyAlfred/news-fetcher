@@ -1,4 +1,5 @@
 import requests
+from bs4 import BeautifulSoup
 
 from config import NEWS_API_BASE_URL
 from models import Article
@@ -55,3 +56,10 @@ class NewsFetcher:
                 image_media_dict[section.get('id')] = index
 
         return image_media_dict
+
+    def clean_sections(self, sections):
+        for section in sections:
+            if 'text' in section:
+                original_section = section.get('text')
+                soup = BeautifulSoup(original_section)
+                section['text'] = soup.get_text()
